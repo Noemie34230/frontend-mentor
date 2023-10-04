@@ -1,0 +1,165 @@
+/************************** GENERAL STYLE ******************************************/
+
+body {
+    
+    max-width: 1440px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    /* border: 2px red solid; */
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    border: solid hsl(322, 100%, 66%) 1px;
+    font-weight: 600;
+    padding: 10px 30px 10px 30px;
+    width: 30%;
+    box-shadow: 2px 2px gray;
+
+}
+
+.button_rounded {
+    border-radius: 50px;
+
+}
+
+/************************** HEADER ******************************************/
+header {
+    /* border: 2px green solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px;
+
+}
+
+.logo_header {
+    width: 20%;
+
+}
+
+.button_header {
+    border: solid hsl(321, 100%, 78%) 2px;
+    background-color: white;
+    border-radius: 50px;
+    color: hsl(321, 100%, 78%);
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    font-weight: 600;
+    width: 10%;
+
+}
+
+/************************** PART ONE ******************************************/
+.partOne {
+    /* border: blue solid 1px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+}
+
+.screen_mockups {
+    margin-top: 50px;
+    width: 75%;
+
+
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.cardNumber{
+    display: flex;
+    flex-direction: column;
+}
+.cardImage{
+    width: 20%;
+}
+
+.textNumber{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/************************** PART TWO ******************************************/
+
+.cardBackground {
+    background-color: hsl(207, 100%, 98%);
+    margin: -10px -30px -10px -20px;
+    padding-left: 10px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 30%;
+    height: 30%;
+    
+}
+.image_top_bg , .image_bottom_bg {
+    margin: 0px -20px 0px -20px;
+}
+/************************** PART THREE ******************************************/
+.partThree{
+    text-align: center;
+    margin: 150px 0px;
+}
+
+/************************** FOOTER ******************************************/
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    margin: 0px -20px -20px -20px;
+    padding: 0px 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.icone{
+    font-size: 20px;
+    color: white;
+    background-color: white;
+}
+.partNewsletterFooter , .partLogoFooter{
+    display: flex;
+    flex-direction: column ;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+footer img{
+    width: 10px;
+}
