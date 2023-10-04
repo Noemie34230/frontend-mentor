@@ -1,11 +1,11 @@
 /************************** GENERAL STYLE ******************************************/
 
 body {
-    
+
     max-width: 1440px;
     font-family: 'Open Sans', sans-serif;
-    padding: 20px;
-    font-size: 16px;
+    
+    font-size: 1rem;
     /* border: 2px red solid; */
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@ h2 {
 /************************** HEADER ******************************************/
 header {
     /* border: 2px green solid; */
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,11 +63,12 @@ header {
 /************************** PART ONE ******************************************/
 .partOne {
     /* border: blue solid 1px; */
+    padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 
 
 }
@@ -86,16 +88,17 @@ header {
     margin-top: 20px;
 }
 
-.cardNumber{
+.cardNumber {
     display: flex;
     flex-direction: column;
 }
-.cardImage{
+
+.cardImage {
     width: 20%;
 }
 
-.textNumber{
-    font-size: 60px;
+.textNumber {
+    font-size: 3.75rem;
     font-weight: 700;
 }
 
@@ -103,31 +106,38 @@ header {
 
 .cardBackground {
     background-color: hsl(207, 100%, 98%);
-    margin: -10px -30px -10px -20px;
+    margin: -10px 0px -10px 0px;
     padding-left: 10px;
 
 }
 
-.card{
+.card {
+    padding: 20px;
     display: flex;
     flex-direction: row;
 
 }
-.cardText{
+
+.cardText {
     display: flex;
     flex-direction: column;
 }
 
-.card img{
+.illustration {
     width: 30%;
     height: 30%;
-    
+
 }
-.image_top_bg , .image_bottom_bg {
-    margin: 0px -20px 0px -20px;
+
+.image_top_bg,
+.image_bottom_bg {
+    max-width: 100%;
+    margin: 0px;
 }
+
 /************************** PART THREE ******************************************/
-.partThree{
+.partThree {
+    padding: 20px;
     text-align: center;
     margin: 150px 0px;
 }
@@ -138,28 +148,178 @@ footer {
     flex-direction: row;
     background-color: hsl(192, 100%, 9%);
     color: white;
-    margin: 0px -20px -20px -20px;
+    margin: 0px 0px -20px 0px;
     padding: 0px 20px;
 }
 
-.logo {
+
+
+.icone {
+    font-size: 30px;
     color: white;
+    padding: 40px 10px 10px 0px;
+
 }
 
-.icone{
-    font-size: 20px;
-    color: white;
-    background-color: white;
-}
-.partNewsletterFooter , .partLogoFooter{
+.partNewsletterFooter,
+.partLogoFooter {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+    padding: 20px;
 }
 
-h3{
+h3 {
     text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
-footer img{
-    width: 10px;
+footer img {
+    width: 20px;
+}
+
+footer p {
+    max-width: 60%;
+}
+
+
+.logo {
+
+    max-width: 50%;
+    min-width: 40%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact,
+.submit {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+input {
+    width: 50%;
+}
+
+/************************** VERSION MOBILE ******************************************/
+
+@media screen and (max-width: 375px) {
+
+    /************************** GENERAL STYLE ******************************************/
+    body {
+        flex-direction: column;
+        font-size: 0.65rem;
+    }
+
+    .button {
+        margin-top: 30px;
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    /************************** HEADER ******************************************/
+    .logo_header {
+        width: 40%;
+
+    }
+
+    .button_header {
+
+        width: 40%;
+
+    }
+
+    /************************** PART NUMBER ******************************************/
+    .number {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .cardNumber {
+        margin-bottom: 30px;
+    }
+
+    .cardImage {
+
+        width: 10%;
+        padding-left: 65px;
+    }
+
+    /************************** PART TWO ******************************************/
+    .illustration {
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .card_reverse {
+        flex-direction: column;
+    }
+
+    .image_top_bg,
+    .image_bottom_bg {
+        margin: 0px 0px 0px 0px;
+        width: 120%;
+    }
+
+
+
+
+
+
+
+    /************************** FOOTER ******************************************/
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+   p {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .submit {
+        gap: 0px;
+        flex-direction: column;
+        align-items: flex-end;
+
+
+    }
+
+    input {
+        width: 100%;
+    }
+
+
+    footer .button {
+
+        width: 50%;
+        margin-right: 0px;
+
+    }
+
 }

@@ -24,6 +24,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
   </style>
+  <script src="https://kit.fontawesome.com/e546e47a9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -63,26 +64,28 @@
 
     <div class="partTwo">
       <img src="./images/bg-section-top-desktop-1.svg" class="image_top_bg" />
+
       <div class="card cardBackground">
         <div class="cardText">
           <h2>Grow Together</h2>
           <p>Generate meaningful discussions with your audience and build a strong, loyal community.
             Think of the insightful conversations you miss out on with a feedback form.</p>
         </div>
-        <img src="./images\illustration-grow-together.svg">
+        <img src="./images\illustration-grow-together.svg" class="illustration">
 
       </div>
 
       <img src="./images/bg-section-bottom-desktop-2.svg" class="image_bottom_bg" />
 
-      <div class="card">
+      <div class="card card_reverse">
 
-        <img src=".\images\illustration-flowing-conversation.svg">
+        <img src=".\images\illustration-flowing-conversation.svg " class="illustration">
 
-        <div class="cardText">
+        <div class="cardText ">
           <h2>Flowing Conversations</h2>
           <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have
             just-in-time loading for a more natural flow.</p>
+
         </div>
       </div>
 
@@ -93,7 +96,7 @@
           <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
             once signed in to your app, your users can start chatting immediately.</p>
         </div>
-        <img src=".\images\illustration-your-users.svg">
+        <img src=".\images\illustration-your-users.svg" class="illustration">
       </div>
 
     </div>
@@ -106,15 +109,24 @@
   </main>
 
   <img src="images/bg-footer-top-desktop.svg" class="image_top_bg">
+  
   <footer>
 
     <div class="partLogoFooter">
-      <img src="./images/logo.svg" class="logo">
+      <img src="./images/logo-footer.svg" class="logo">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
         vestibulum a, ultrices quis sem.</p>
 
-      <img src="./images/icon-phone.svg"><a href="+1-543-123-4567">Phone: +1-543-123-4567</a>
-      <img src="./images/icon-email.svg"><a href="mailto:example@huddle.com"> example@huddle.com</a>
+      <div class="contact">
+        <img src="./images/icon-phone.svg">
+        <a href="+1-543-123-4567">Phone: +1-543-123-4567</a>
+      </div>
+
+      <div class="contact">
+        <img src="./images/icon-email.svg">
+        <a href="mailto:example@huddle.com"> example@huddle.com</a>
+      </div>
+
       <div>
         <i class="fa-brands fa-square-facebook icone"></i>
         <i class="fa-brands fa-instagram icone"></i>
@@ -126,10 +138,12 @@
       <h3>Newsletter</h3>
       <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
         send you spam or pass on your email address</p>
-      <input type="text" id="name" name="name" required minlength="4" maxlength="20" size="10" />
-      <input type="button" value="Subscribe" class="button" />
+      <div class="submit">
+        <input type="text" id="name" name="name" required minlength="4" maxlength="20" size="10" />
+        <input type="button" value="Subscribe" class="button" />
+      </div>
     </div>
-<!-- 
+    <!-- 
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Noémie</a>.
