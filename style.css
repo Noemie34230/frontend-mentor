@@ -2,11 +2,10 @@
 
 body {
 
-    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Open Sans', sans-serif;
-    
     font-size: 1rem;
-    /* border: 2px red solid; */
     display: flex;
     flex-direction: column;
 }
@@ -68,7 +67,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
 
 }
@@ -277,7 +275,7 @@ input {
     .image_top_bg,
     .image_bottom_bg {
         margin: 0px 0px 0px 0px;
-        width: 120%;
+        width: 100vw;
     }
 
 
